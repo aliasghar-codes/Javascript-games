@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #9DCDC0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+body > i{
+    color: black; 
+    font-size: 3rem;
+    margin: 20px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+#reset{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+#reset:hover{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+h1{
+    margin: 2vw;
+    font-size: 3rem;
+    color: black;  
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1vw;
+
+}
+.box{
+    height: 8vw;
+    width: 8vw;
+    font-size: 3rem;
+    font-weight: 900;
+    background-color: #F8FA90;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 4px 4px 11px 0px rgb(60, 60, 60), inset 2px 2px 13px 0px rgb(60, 60, 60);
+    border: 1px solid rgb(103, 102, 102);
+}
+.box:hover{
+    background-color: #f2f4a7;
+}
+.gamewin{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gamewin p {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+#guide{
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.4rem;
+}
+.gamewin img{
+    width: 18vw;
+}
+
+@media screen and (max-width: 768px) {
+    .box{
+        width: 25vw;
+        height: 25vw;
+    }
+    .gamewin img{
+        height: 200px;
+    }
+}

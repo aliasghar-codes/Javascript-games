@@ -1,0 +1,78 @@
+@font-face {
+    font-family: vt23;
+    src: url(assets/VT323-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: vt23;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #414141;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    border-radius: 100px;
+    margin: 5px;
+}
+.border-1{
+    border: 10px solid #595f43;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43;
+}
+.border-2{
+    border: 8px solid #abb78a;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+}
+.border-3{
+    border: 30px solid #8bb96c;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8bb96c;
+}
+.instruction-para{
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    font-size: 180%;
+    font-weight: bolder;
+}
+.scores{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 150%;
+    margin-bottom: .5vw;
+    font-weight: bolder;
+}
+.score{
+    color: #abb78a;
+}
+.high-score{
+    color: #dadada;
+    display: none;
+}
+.border-3, .cover{
+    background-color: #c4cfa3;
+}
+.cover{
+    position: absolute;
+}
+.snake{
+    border: #5a5a5a 1px dotted;
+    background-color: #414141;
+}
+.food{
+    background-color: #dedede;
+    border: #999 solid 5px;
+}
